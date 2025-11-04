@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
 import CircularText from './CircularText';
-
+import { assets } from '../assets/assets';
+// import logo from '../assets/logo'
 const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
   const sections = ['home', 'projects', 'skills', 'contact'];
@@ -23,11 +24,7 @@ const Navbar = ({ activeSection }) => {
             onClick={() => scrollToSection('home')}
             className="text-white tracking-wider cursor-pointer z-10"
           >
-            <CircularText text="*JAWED*HAWARI"
-              radius = {window.innerWidth < 600 ? 40 : 30}          // bigger radius → wider circle
-              fontSize="xs"         // Tailwind text size: xs, sm, base, lg, xl
-              spinDuration={15}
-              onHover="speedUp" />
+            <img src={assets.Logo} alt="logo" className='w- h-10 rounded-3xl' />
           </button>
 
           {/* Desktop Navigation */}
