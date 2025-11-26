@@ -1,91 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, ArrowLeft, Folder } from 'lucide-react';
+import { projectCategories } from '../assets/assets';
 
-const projectCategories = [
-  {
-    id: 'ml-ai',
-    name: 'ML/AI Projects',
-    description: 'Machine Learning and Artificial Intelligence projects',
-    icon: '🤖',
-    projects: [
-      {
-        id: 1,
-        title: 'Image Classification Model',
-        description: 'Deep learning model for multi-class image classification using CNNs',
-        tags: ['Python', 'TensorFlow', 'Keras', 'CV'],
-      },
-      {
-        id: 2,
-        title: 'NLP Sentiment Analysis',
-        description: 'Sentiment analysis tool using transformers and BERT',
-        tags: ['Python', 'PyTorch', 'BERT', 'NLP'],
-      },
-      {
-        id: 3,
-        title: 'Recommendation System',
-        description: 'Collaborative filtering recommendation engine',
-        tags: ['Python', 'Scikit-learn', 'Pandas'],
-      },
-    ],
-  },
-  {
-    id: 'mern',
-    name: 'MERN Stack Projects',
-    description: 'Full-stack applications built with MongoDB, Express, React, and Node.js',
-    icon: '⚛️',
-    projects: [
-      {
-        id: 4,
-        title: 'E-commerce Platform',
-        description: 'Full-featured online shopping platform with payment integration',
-        tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      },
-      {
-        id: 5,
-        title: 'Social Media App',
-        description: 'Real-time social networking application with chat features',
-        tags: ['React', 'Socket.io', 'MongoDB', 'JWT'],
-      },
-      {
-        id: 6,
-        title: 'Task Management System',
-        description: 'Collaborative project management tool with real-time updates',
-        tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
-      },
-    ],
-  },
-  {
-    id: 'java',
-    name: 'Java Stack Projects',
-    description: 'Enterprise applications built with Java and Spring Framework',
-    icon: '☕',
-    projects: [
-      {
-        id: 7,
-        title: 'Banking Management System',
-        description: 'Secure banking application with transaction management',
-        tags: ['Java', 'Spring Boot', 'MySQL', 'JPA'],
-      },
-      {
-        id: 8,
-        title: 'Employee Portal',
-        description: 'Enterprise HR management system with role-based access',
-        tags: ['Java', 'Spring MVC', 'Hibernate', 'Thymeleaf'],
-      },
-      {
-        id: 9,
-        title: 'Inventory Management',
-        description: 'Real-time inventory tracking and management system',
-        tags: ['Java', 'Spring Boot', 'PostgreSQL', 'REST API'],
-      },
-    ],
-  },
-];
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
-
   const handleCategoryClick = (categoryId) => {
     setSelectedCategory(categoryId);
   };
@@ -194,7 +114,7 @@ const Projects = () => {
                   >
                     <div className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300 h-full flex flex-col">
                       <div className="flex justify-between items-start mb-4">
-                        <h3 className="text-white">{project.title}</h3>
+                        <h3 className="text-white text-left">{project.title}</h3>
                         <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
                           <button className="text-white/60 hover:text-white transition-colors">
                             <Github size={20} />
@@ -204,7 +124,7 @@ const Projects = () => {
                           </button>
                         </div>
                       </div>
-                      <p className="text-white/60 mb-4 flex-grow">{project.description}</p>
+                      <p className="text-white/60 mb-4 flex-grow text-justify mx-auto max-w-[600px]">{project.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag) => (
                           <span
