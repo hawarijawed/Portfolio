@@ -83,7 +83,7 @@ const Projects = () => {
               <div className="mb-16">
                 <button
                   onClick={handleBackClick}
-                  className="flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group"
+                  className="flex items-center gap-2 text-white/60 hover:text-white transition-colors mb-8 group cursor-pointer"
                 >
                   <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
                   <span className="text-sm uppercase tracking-wider">Back to Categories</span>
@@ -103,7 +103,7 @@ const Projects = () => {
                 </motion.div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
                 {currentCategory?.projects.map((project, index) => (
                   <motion.div
                     key={project.id}
@@ -115,11 +115,12 @@ const Projects = () => {
                     <div className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300 h-full flex flex-col">
                       <div className="flex justify-between items-start mb-4">
                         <h3 className="text-white text-left">{project.title}</h3>
-                        <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                          <button className="text-white/60 hover:text-white transition-colors">
+                        <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity" onClick={()=>window.open(project.link,"_blank")}>
+                          <button className="text-white/60 hover:text-white transition-colors cursor-pointer">
                             <Github size={20} />
+
                           </button>
-                          <button className="text-white/60 hover:text-white transition-colors">
+                          <button className="text-white/60 hover:text-white transition-colors cursor-pointer">
                             <ExternalLink size={20} />
                           </button>
                         </div>

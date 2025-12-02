@@ -42,18 +42,21 @@ export const projectCategories = [
         title: 'E-commerce Platform',
         description: 'A full-stack food delivery application inspired by Zomato, allowing users to browse dishes, add them to the cart, and place orders. Admins can manage food items via a dedicated panel',
         tags: ['React', 'Node.js', 'MongoDB', 'Express','JWT','Multer','Axios'],
+        link:'https://github.com/hawarijawed/Food-Delivery-Website'
       },
       {
         id: 5,
         title: 'Spotify Clone (Full Stack Application',
         description: 'Built a Spotify-like music streaming platform enabling users to upload, play, and manage playlist.',
         tags: ['React', 'Node js', 'MongoDB', 'JWT'],
+        link: 'https://github.com/hawarijawed/Web-Music-Player'
       },
       {
         id: 6,
         title: 'Hotel Management System',
         description: 'The platform allows users to browse hotels, search for rooms, book stays, and manage reservations, while hotel owners can manage hotels, rooms, and bookings.',
         tags: ['React', 'Axios', 'Node.js','Express.js', 'MongoDB','Clerk Auth','Brevo SMTP','Cloudinary'],
+        link: 'https://github.com/hawarijawed/Hotel-Management'
       },
     ],
   },
@@ -65,21 +68,24 @@ export const projectCategories = [
     projects: [
       {
         id: 7,
-        title: 'Banking Management System',
-        description: 'Secure banking application with transaction management',
-        tags: ['Java', 'Spring Boot', 'MySQL', 'JPA'],
+        title: 'YouTube Account Manager',
+        description: 'A YouTube-like backend system built with Spring Boot, providing secure authentication and features for managing users, videos, comments, reactions (likes/dislikes), and subscriptions.',
+        tags: ['Java', 'Spring Boot', 'MongoDB', 'JWT', 'BCrypt'],
+        link: 'https://github.com/hawarijawed/YouTube-Account-Manager'
       },
       {
         id: 8,
-        title: 'Employee Portal',
-        description: 'Enterprise HR management system with role-based access',
+        title: 'E-Commerce Backend System',
+        description: 'A full-fledged E-Commerce backend build using Spring Boot and using PostGre SQL as database. This provides wide range of options to users same as an e-commerce service provide.',
         tags: ['Java', 'Spring MVC', 'Hibernate', 'Thymeleaf'],
+        link: 'https://github.com/hawarijawed/E-Commerce-Backend-Project'
       },
       {
         id: 9,
-        title: 'Inventory Management',
-        description: 'Real-time inventory tracking and management system',
+        title: 'Course Search',
+        description: 'A Spring Boot application for searching courses using Elasticsearch as the backend search engine. This project demonstrates how to: Run Elasticsearch inside Docker, Index sample course data on startup, Perform advanced search queries with filters, pagination, and sorting',
         tags: ['Java', 'Spring Boot', 'PostgreSQL', 'REST API'],
+        link: 'https://github.com/hawarijawed/Course-Search'
       },
     ],
   },
