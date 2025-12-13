@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
-import CircularText from './CircularText';
 import { assets } from '../assets/assets';
 // import logo from '../assets/logo'
 const Navbar = ({ activeSection }) => {

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import {TextType} from "../components/TextType";
 
 const Hero = () => {
   const containerVariants = {
@@ -68,7 +69,7 @@ const Hero = () => {
         </motion.h1>
 
         {/* Typing / Interactive Line */}
-        <motion.p
+        <motion.div
           custom={1}
           variants={textVariants}
           className="text-white/80 text-xl sm:text-2xl mb-10 font-light"
@@ -77,9 +78,20 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 1, 0.7, 1], transition: { repeat: false, duration: 2 } }}
           >
-            💻 Full Stack Developer | Turning ideas into interactive web experiences
+            
+
+            💻 
+            
+            <TextType 
+              text={["Frontend", "Backend", "SDE"]}
+              typingSpeed={35}
+              pauseDuration={2500}
+              showCursor={true}
+              cursorCharacter="_"
+            />
+            <br/>Turning ideas into interactive web experiences
           </motion.span>
-        </motion.p>
+        </motion.div>
 
         {/* Action Buttons */}
         <motion.div variants={itemVariants} className="flex gap-4 justify-center">
