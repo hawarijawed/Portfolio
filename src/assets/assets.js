@@ -91,9 +91,16 @@ export const projectCategories = [
         id: 9,
         title: 'Course Search',
         description: 'A Spring Boot application for searching courses using Elasticsearch as the backend search engine. This project demonstrates how to: Run Elasticsearch inside Docker, Index sample course data on startup, Perform advanced search queries with filters, pagination, and sorting',
-        tags: ['Java', 'Spring Boot', 'PostgreSQL', 'REST API'],
+        tags: ['Java', 'Spring Boot', 'PostgreSQL', 'REST API', 'Postman'],
         link: 'https://github.com/hawarijawed/Course-Search'
       },
+      {
+        id:10,
+        title: 'ExpenseShare: Splitwise-like Backend System',
+        description: 'ExpenseShare is a backend system inspired by Splitwise, designed to manage shared expenses among groups of users. The project focuses on correct financial modeling, balance tracking, settlement logic and real-world edge cases, rather than simple CRUD operations.',
+        tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'REST APIs', 'Postman'],
+        link: 'https://github.com/hawarijawed/ExpenseShare'
+      }
     ],
   },
 ];
