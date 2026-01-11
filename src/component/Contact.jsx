@@ -5,7 +5,7 @@ const socialLinks = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/hawarijawed' },
   { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/jawed-hawari-997349237/' },
   { icon: Twitter, label: 'Twitter', href: '#' },
-  { icon: Mail, label: 'Email', href: 'mailto:hello@example.com' },
+  { icon: Mail, label: 'Email', href: 'mailto:hawarijawed143@gmail.com' },
 ];
 
 const Contact = () => {
