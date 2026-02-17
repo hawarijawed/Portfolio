@@ -5,7 +5,7 @@ import { assets } from '../assets/assets';
 // import logo from '../assets/logo'
 const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const sections = ['home', 'projects', 'skills', 'contact'];
+  const sections = ['home', 'about', 'projects', 'skills', 'contact'];
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);

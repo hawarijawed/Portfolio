@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 import Navbar from './component/Navbar';
 import Hero from './component/Hero';
-import  Projects  from './component/Projects';
-import  Skills  from './component/Skills';
-import  Contact  from './component/Contact';
+import About from './component/About';
+import Projects from './component/Projects';
+import Skills from './component/Skills';
+import Contact from './component/Contact';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projects', 'skills', 'contact'];
+      const sections = ['home', 'about', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {
@@ -38,6 +39,7 @@ export default function App() {
       
       <main>
         <Hero />
+        <About />
         <Projects />
         <Skills />
         <Contact />
